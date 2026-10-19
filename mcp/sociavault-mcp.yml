@@ -1,0 +1,8 @@
+generated: '2026-10-19'
+method: probed
+source: https://docs.sociavault.com/.well-known/mcp/server-card.json
+deployment:
+  mode: remote
+  endpoint: https://sociavault.main-kill-isr.mintlify.me/mcp
+  auth: none
+  verified: probed

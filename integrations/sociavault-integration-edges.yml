@@ -1,0 +1,18 @@
+generated: '2026-10-19'
+method: none
+source:
+- https://zapier.com/apps/sociavault/integrations
+- https://zapier.com/apps/ziddec/integrations
+- https://n8n.io/integrations/sociavault/
+- https://composio.dev/toolkits/sociavault
+- https://monid.ai/tools/sociavault
+checked:
+- https://composio.dev/toolkits/sociavault
+- https://monid.ai/tools/sociavault
+- https://n8n.io/integrations/sociavault/
+- https://zapier.com/apps/sociavault/integrations
+- https://zapier.com/apps/ziddec/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

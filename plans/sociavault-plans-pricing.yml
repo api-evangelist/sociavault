@@ -1,0 +1,56 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://sociavault.com/pricing
+sources:
+- https://sociavault.com/pricing
+name: Ziddec pricing
+audience: developer-api
+pricing_basis: per-call
+plans:
+- name: Starter Pack
+  price_text: $ 29 /pack
+  price: 29
+  description: Side projects and steady, low-volume work. 6,000 Credits
+  features:
+  - 6,000 Credits
+  - $ 0.00483 / credit
+  - Full REST API access
+  - All platforms included
+  - Priority email support
+  - Credits never expire
+- name: Growth Pack
+  price_text: $ 79 /pack
+  price: 79
+  description: Where most agencies and small teams land. 20,000 Credits
+  features:
+  - 20,000 Credits
+  - $ 0.00395 / credit
+  - Full REST API access
+  - All platforms included
+  - Priority support
+  - Credits never expire
+- name: Pro Pack
+  price_text: $ 199 /pack
+  price: 199
+  description: Production workloads that don't slow down. 75,000 Credits
+  features:
+  - 75,000 Credits
+  - $ 0.00265 / credit
+  - Full REST API access
+  - All platforms included
+  - Priority support and onboarding
+  - Credits never expire
+- name: Enterprise Pack
+  price_text: $ 399 /pack
+  price: 399
+  description: Heavy pipelines and big bulk runs. 200,000 Credits
+  features:
+  - 200,000 Credits
+  - $ 0.00199 / credit
+  - Full REST API access
+  - All platforms included
+  - Dedicated support and SLA
+  - Custom integrations on request
+  - Credits never expire
+docs: https://sociavault.com/pricing

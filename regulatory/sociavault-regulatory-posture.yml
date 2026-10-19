@@ -1,0 +1,22 @@
+generated: '2026-10-19'
+method: searched
+source: https://sociavault.com/privacy
+signals:
+  data_subject_request:
+    url: https://sociavault.com/privacy
+    section: Your Rights
+    note: Provides data subject request rights (access, correction, deletion, data export).
+    evidence:
+      - source: https://sociavault.com/privacy
+        http_status: 200
+        fetched: "true"
+        quote: "You have the right to: Access your personal information Correct inaccurate information Request deletion of your account and data Export your data"
+  subprocessors:
+    url: https://sociavault.com/privacy
+    section: Data Sharing and Disclosure
+    note: Indicates use of subprocessors (service providers) for operations.
+    evidence:
+      - source: https://sociavault.com/privacy
+        http_status: 200
+        fetched: "true"
+        quote: "We may share information only in these limited circumstances: Service Providers: Trusted third parties who help us operate our services (payment processors, hosting providers)"

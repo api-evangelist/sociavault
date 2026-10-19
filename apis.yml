@@ -1,24 +1,105 @@
 aid: sociavault
+
 name: Ziddec
-description: 'Ziddec provides a public social media scraping API platform, offering developers access to data from Instagram, TikTok, YouTube, Twitter, LinkedIn, Reddit, Pinterest and more. The service enables real‑time extraction of profiles, posts, comments, and analytics for building dashboards, training AI models, and monitoring trends, all without managing infrastructure. Ziddec emphasizes high uptime, low latency, and transparent pricing, positioning itself as a turnkey solution for social media data needs.'
+
+image: https://sociavault.com/og-image.png
+
+description: Ziddec provides a public social media scraping API platform, offering developers access to data from Instagram, TikTok, YouTube,
+  Twitter, LinkedIn, Reddit, Pinterest and more. The service enables real‑time extraction of profiles, posts, comments, and analytics for building
+  dashboards, training AI models, and monitoring trends, all without managing infrastructure. Ziddec emphasizes high uptime, low latency, and
+  transparent pricing, positioning itself as a turnkey solution for social media data needs.
+
 url: https://raw.githubusercontent.com/api-evangelist/sociavault/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
-- Company
-apis: []
+- Social Media Data
+- API
+- Scraping
+- Analytics
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/sociavault-plans-pricing.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Authentication
+  url: authentication/sociavault-authentication.yml
+- type: Conformance
+  url: conformance/sociavault-conformance.yml
+- type: Overlay
+  url: overlays/sociavault-openapi-overlay.yml
+- type: LLMsTxt
+  url: llms/sociavault-llms.txt
+- type: AgentCard
+  url: a2a/sociavault-a2a.yml
+- type: MCPServer
+  url: mcp/sociavault-mcp.yml
+- type: WellKnown
+  url: well-known/sociavault-well-known.yml
+- type: Hosts
+  url: hosts/sociavault-hosts.yml
+- type: SDKs
+  url: packages/sociavault-packages.yml
+- type: Packages
+  url: packages/sociavault-packages.yml
+- type: TermsOfService
+  url: https://sociavault.com/terms
+- type: StatusPage
+  url: https://status.sociavault.com
+- type: SignUp
+  url: https://sociavault.com/signup
+- type: Sandbox
+  url: https://sociavault.com/playground
+- type: PrivacyPolicy
+  url: https://sociavault.com/privacy
+- type: Pricing
+  url: https://sociavault.com/pricing
+- type: ChangeLog
+  url: https://sociavault.com/changelog
+- type: Blog
+  url: https://sociavault.com/blog
+- type: GettingStarted
+  url: https://docs.sociavault.com/quickstart
+- type: Documentation
+  url: https://docs.sociavault.com/
+- type: DeveloperPortal
+  url: https://docs.sociavault.com\
+- type: APIReference
+  url: https://docs.sociavault.com/llms.txt
 - type: DomainSecurity
   url: security/sociavault-domain-security.yml
 - type: Website
   url: https://sociavault.com/
+
+apis:
+- name: SociaVault API
+  description: Social media data extraction API
+  humanURL: https://docs.sociavault.com/api-reference/introduction
+  baseURL: https://api.sociavault.com
+  properties:
+  aid: sociavault:sociavault-api
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 26
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

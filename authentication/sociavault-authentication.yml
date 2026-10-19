@@ -1,0 +1,16 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.sociavault.com/development.md
+sources:
+- https://docs.sociavault.com/development.md
+- https://docs.sociavault.com/quickstart.md
+description: All API requests require authentication using your API key in the `X-API-Key` header.
+schemes:
+- type: apiKey
+  name: API Key
+  evidence: All API requests require authentication using your API key in the `X-API-Key` header.
+  location: header
+  header: X-API-Key
+  how_to_obtain: Sign up at https://sociavault.com, navigate to your Dashboard, and copy your API key (starts with `sk_live_`).
+docs: https://docs.sociavault.com/development.md

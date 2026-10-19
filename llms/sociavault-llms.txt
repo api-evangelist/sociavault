@@ -1,0 +1,126 @@
+# SociaVault API
+
+- [Welcome to SociaVault](https://docs.sociavault.com/index.md): Extract social media data from multiple platforms with our powerful API
+- [Quickstart](https://docs.sociavault.com/quickstart.md): Make your first API call in under 5 minutes
+- [Authentication](https://docs.sociavault.com/development.md): How to authenticate with the SociaVault API
+- [API Reference](https://docs.sociavault.com/api-reference/introduction.md): Complete guide to the SociaVault API - Extract data from multiple social media platforms
+- [MCP Server](https://docs.sociavault.com/mcp-server.md): Use SociaVault from Claude, Cursor, VS Code, ChatGPT, and any AI agent with the official MCP server
+- [Profile](https://docs.sociavault.com/api-reference/tiktok/profile.md): Scrapes a public TikTok profile
+- [User's Audience Demographics](https://docs.sociavault.com/api-reference/tiktok/demographics.md): Returns audience demographic data for a TikTok user. Currently includes audience country distribution.
+- [Profile Videos](https://docs.sociavault.com/api-reference/tiktok/videos.md): Scrapes videos from a TikTok profile. Pass cursor to get more videos.
+- [Video Info](https://docs.sociavault.com/api-reference/tiktok/video-info.md): Scrapes data from a TikTok video
+- [Transcript](https://docs.sociavault.com/api-reference/tiktok/transcript.md): Returns the transcript from a TikTok video. Enable the AI fallback option to generate a transcript when one is not natively available — note this costs 10 credits instead of 1.
+- [TikTok Live](https://docs.sociavault.com/api-reference/tiktok/live.md): Scrapes a TikTok user's live stream
+- [Comments](https://docs.sociavault.com/api-reference/tiktok/comments.md): Scrapes comments from a TikTok video
+- [Comment Replies](https://docs.sociavault.com/api-reference/tiktok/comment-replies.md): Scrapes replies to a TikTok comment
+- [Following](https://docs.sociavault.com/api-reference/tiktok/following.md): Scrapes accounts that a TikTok user follows
+- [Followers](https://docs.sociavault.com/api-reference/tiktok/followers.md): Scrapes followers of a TikTok account
+- [Search Users](https://docs.sociavault.com/api-reference/tiktok/search-users.md): Scrapes TikTok users matching a search query
+- [Search by Hashtag](https://docs.sociavault.com/api-reference/tiktok/search-hashtag.md): Scrapes TikTok videos by hashtag.
+- [Hashtag Videos by ID](https://docs.sociavault.com/api-reference/tiktok/hashtag-videos.md): Gets the videos for a TikTok hashtag by its numeric hashtag ID.
+- [Search by Keyword](https://docs.sociavault.com/api-reference/tiktok/search-keyword.md): Scrapes TikTok videos matching a keyword
+- [Search Music](https://docs.sociavault.com/api-reference/tiktok/search-music.md): Search TikTok sounds and music by keyword. Returns 10 results per page — use the `offset` parameter with the `cursor` value from the previous response to load more.
+- [Top Search](https://docs.sociavault.com/api-reference/tiktok/search-top.md): Access TikTok's 'Top' search results, which include both Photo Carousels and Videos. Unlike the Keyword Search endpoint, this returns mixed content types.
+- [Get Song Details](https://docs.sociavault.com/api-reference/tiktok/music-details.md): Get detailed metadata for a specific TikTok song.
+- [TikToks using Song](https://docs.sociavault.com/api-reference/tiktok/music-videos.md): Get the TikToks using a song
+- [Trending Feed](https://docs.sociavault.com/api-reference/tiktok/trending.md): Get the trending feed from TikTok.
+- [Shop Products](https://docs.sociavault.com/api-reference/tiktok-shop/products.md): Get all products listed in a TikTok Shop. Use the cursor from each response to paginate through results.
+- [Product Details](https://docs.sociavault.com/api-reference/tiktok-shop/product-details.md): Get detailed information about a specific TikTok Shop product, including current stock levels, related TikTok videos promoting the product, and additional metadata. This endpoint currently supports US TikTok Shop products only.
+- [Shop Search](https://docs.sociavault.com/api-reference/tiktok-shop/search.md): Search TikTok Shop for products by keyword. Returns 30 products per page — use the page parameter to navigate through results.
+- [Product Reviews](https://docs.sociavault.com/api-reference/tiktok-shop/product-reviews.md): Get a product's reviews (100 reviews per page).
+- [Profile](https://docs.sociavault.com/api-reference/instagram/profile.md): Gets public Instagram profile data, recent posts, and related accounts
+- [Basic Profile](https://docs.sociavault.com/api-reference/instagram/basic-profile.md): Get a basic public Instagram profile by numeric user ID. Useful as a fallback when a handle-based lookup fails (some valid accounts return "account does not exist" when queried by username).
+- [Posts](https://docs.sociavault.com/api-reference/instagram/posts.md): Get public posts from an Instagram profile. Note: play counts reflect Instagram-only views. When a Reel is cross-posted to Facebook, the combined view count is visible to logged-in users — this API returns Instagram views only.
+- [Post/Reel Info](https://docs.sociavault.com/api-reference/instagram/post-info.md): Get detailed public information about a specific Instagram post or reel, including likes, comments, caption, media URLs, owner, audio, and — for reels and videos — the `video_play_count` view count. Note: play counts reflect Instagram views only; when a reel is cross-posted to Facebook, the combined…
+- [Transcript](https://docs.sociavault.com/api-reference/instagram/transcript.md): Generate a transcript for an Instagram post or reel using AI. Responses typically take 10–30 seconds. Only videos under 2 minutes are supported — if no speech is detected, the transcript returns null. For carousel posts, a transcript is returned for each individual item.
+- [Comments](https://docs.sociavault.com/api-reference/instagram/comments.md): Get comments from an Instagram post or reel, paginated at ~15 per page. Use the `cursor` from each response to load more. Note: Instagram's displayed comment count includes replies and hidden comments — this endpoint returns top-level visible comments only, so the total may be lower than what is sho…
+- [Comment Replies](https://docs.sociavault.com/api-reference/instagram/comment-replies.md): Get replies to a specific Instagram comment. Provide the post or reel `url` and the parent `comment_id` (obtained from the Comments endpoint). Use the `cursor` from each response to load more replies.
+- [Search](https://docs.sociavault.com/api-reference/instagram/search.md): Instagram native search — find users, hashtags, and places. Use this for account or entity lookup. It returns one page and does not return posts.
+- [Popular Search](https://docs.sociavault.com/api-reference/instagram/search-popular.md): Explore an Instagram topic and its curated posts. Use this when you want the Popular page's generated description, sources, suggested terms, media count, and paginated posts. Use the `cursor` from each response to fetch the next page.
+- [Reels](https://docs.sociavault.com/api-reference/instagram/reels.md): Get public reels from an Instagram profile. Accepts either a user_id or handle — user_id is recommended for faster responses. Pinned reels are not included, and reel descriptions are not returned here; use the Post/Reel Info endpoint to get those. Note: play counts reflect Instagram-only views. When…
+- [Search Hashtag Posts](https://docs.sociavault.com/api-reference/instagram/search-hashtag.md): Find public Instagram posts and reels for a hashtag. This endpoint discovers Google-indexed content and then reads the public Instagram pages, so it works without Instagram's login-gated search and relies only on publicly available data.
+- [Story Highlights](https://docs.sociavault.com/api-reference/instagram/highlights.md): Get story highlights from an Instagram user
+- [Highlights Details](https://docs.sociavault.com/api-reference/instagram/highlight-detail.md): Get details about a specific highlight
+- [Reels using Song](https://docs.sociavault.com/api-reference/instagram/reels-by-song.md): Get reels using a song
+- [Channel Details](https://docs.sociavault.com/api-reference/youtube/channel.md): Get comprehensive channel information including stats and metadata. Can pass channelId, handle, or url.
+- [Channel Videos](https://docs.sociavault.com/api-reference/youtube/channel-videos.md): Get all videos from a channel with detailed information. Can pass channelId or handle.
+- [Channel Playlists](https://docs.sociavault.com/api-reference/youtube/channel-playlists.md): Get playlists from a YouTube channel. Can pass channelId or handle.
+- [Channel Lives](https://docs.sociavault.com/api-reference/youtube/channel-lives.md): Get live streams and past streams from a YouTube channel. Can pass channelId or handle.
+- [Channel Community Posts](https://docs.sociavault.com/api-reference/youtube/channel-community-posts.md): Get community posts from a YouTube channel. Can pass channelId or handle.
+- [Channel Shorts](https://docs.sociavault.com/api-reference/youtube/channel-shorts.md): Get shorts from a YouTube channel. For additional details such as description or publish date, use the 'Video/Short Details' endpoint.
+- [Video/Short Details](https://docs.sociavault.com/api-reference/youtube/video.md): Get complete information about a video or short. To get transcripts, use the dedicated /v1/scrape/youtube/video/transcript endpoint.
+- [Transcript](https://docs.sociavault.com/api-reference/youtube/video-transcript.md): Get transcript of a video or short
+- [Search](https://docs.sociavault.com/api-reference/youtube/search.md): Search YouTube and get matching videos, channels, playlists, shorts, lives, etc.
+- [Search by Hashtag](https://docs.sociavault.com/api-reference/youtube/search-hashtag.md): Search YouTube and get matching videos, channels, and playlists
+- [Comments](https://docs.sociavault.com/api-reference/youtube/video-comments.md): Get top-level comments from a YouTube video, paginated at ~20 per page. Use the `continuationToken` from each response to load more. Maximum retrievable: ~1,000 comments with `order=top` or ~7,000 with `order=newest`. Note: YouTube's displayed comment count includes reply threads, so the total retur…
+- [Comment Replies](https://docs.sociavault.com/api-reference/youtube/video-comment-replies.md): Get replies to a specific comment on a YouTube video.
+- [Trending Shorts](https://docs.sociavault.com/api-reference/youtube/shorts-trending.md): Get about 48 trending shorts
+- [Person's Profile](https://docs.sociavault.com/api-reference/linkedin/profile.md): Get a person's public LinkedIn profile including their recent posts. Returns only publicly available data — equivalent to what is visible in an incognito browser. Note: LinkedIn no longer exposes work history or job title publicly.
+- [Company Page](https://docs.sociavault.com/api-reference/linkedin/company.md): Get a LinkedIn company page
+- [Post](https://docs.sociavault.com/api-reference/linkedin/post.md): Get a Linkedin post. This can be a post or an article.
+- [Post Transcript](https://docs.sociavault.com/api-reference/linkedin/post-transcript.md): Get the transcript from a LinkedIn post video, when LinkedIn exposes one. Returns the transcript text for the video attached to the given post.
+- [Search Posts](https://docs.sociavault.com/api-reference/linkedin/search-posts.md): Search for public LinkedIn posts by keyword. Uses Google Search to find indexed posts, then scrapes the public LinkedIn pages. Use the `cursor` from each response to page through more results.
+- [Profile](https://docs.sociavault.com/api-reference/facebook/profile.md): Get public Facebook profile information
+- [Profile Posts](https://docs.sociavault.com/api-reference/facebook/profile-posts.md): Get publicly visible posts from a Facebook profile — equivalent to what is accessible without being logged in. Accepts a profile URL or pageId (recommended for faster responses). Returns up to 3 posts per request.
+- [Profile Reels](https://docs.sociavault.com/api-reference/facebook/profile-reels.md): Get public reels from a Facebook page, 10 at a time. **Important:** Pagination requires passing both `next_page_id` and `cursor` from the previous response.
+- [Post](https://docs.sociavault.com/api-reference/facebook/post.md): Get a public Facebook post or reel by url.
+- [Transcript](https://docs.sociavault.com/api-reference/facebook/post-transcript.md): Get the transcript of a Facebook post. Can be a post or reel.
+- [Comments](https://docs.sociavault.com/api-reference/facebook/post-comments.md): Get the comments of a Facebook post (or reel)
+- [Comment Replies](https://docs.sociavault.com/api-reference/facebook/comment-replies.md): Get replies to a specific Facebook comment. Requires the feedback_id and expansion_token from the comments endpoint response.
+- [Facebook Group Posts](https://docs.sociavault.com/api-reference/facebook/group-posts.md): Get posts from a public Facebook group. Returns up to 3 posts per request due to Facebook API constraints.
+- [Location Search](https://docs.sociavault.com/api-reference/facebook-marketplace/location-search.md): Look up cities and regions on Facebook Marketplace and get the coordinates you'll need to call the Marketplace Search endpoint.
+- [Search](https://docs.sociavault.com/api-reference/facebook-marketplace/search.md): Pull Facebook Marketplace listings around any coordinate, with filters for price range, condition, delivery method, listing date, and availability. Use the Location Search endpoint first to grab the lat/lng for the city or region you want to search.
+- [Item](https://docs.sociavault.com/api-reference/facebook-marketplace/item.md): Fetch full details for a single Facebook Marketplace listing by its ID or URL.
+- [Ad Details](https://docs.sociavault.com/api-reference/facebook-ad-library/ad-details.md): Get details for a specific Facebook Ad Library entry by Ad ID. For ads with multiple versions, the title should be sourced from the `cards` object in the response.
+- [Ad Transcript](https://docs.sociavault.com/api-reference/facebook-ad-library/ad-transcript.md): Get the transcript for a Facebook Ad Library video ad by ad ID or URL. Provide either `id` or `url`. Credits are only charged when a transcript is returned — if the ad has no available transcript, the request costs 0 credits.
+- [Search](https://docs.sociavault.com/api-reference/facebook-ad-library/search.md): Search the Facebook (Meta) Ad Library by keyword. GET requests are capped at approximately 1,500 results due to cursor size limits. For larger result sets, use this endpoint as a POST request with the query parameters passed in the request body.
+- [Company Ads](https://docs.sociavault.com/api-reference/facebook-ad-library/company-ads.md): Get all the ads a company has running
+- [Search for Companies](https://docs.sociavault.com/api-reference/facebook-ad-library/search-companies.md): Search for companies by name and get their ad library page id
+- [Company Ads](https://docs.sociavault.com/api-reference/google-ad-library/company-ads.md): Get public ads for a company from the Google Ad Transparency Library. Only publicly accessible ads are returned — login-gated ads cannot be retrieved. Ad text is extracted via OCR, so response times may be slightly longer.
+- [Ad Details](https://docs.sociavault.com/api-reference/google-ad-library/ad-details.md): Get details for a specific Google ad. Ad text is extracted via OCR and may not always be 100% accurate.
+- [Search Advertisers](https://docs.sociavault.com/api-reference/google-ad-library/search-advertisers.md): Search the Google Ad Transparency Library for advertisers to get their advertiser id
+- [Search Ads](https://docs.sociavault.com/api-reference/linkedin-ad-library/search.md): Search the LinkedIn Ad Library
+- [Ad Details](https://docs.sociavault.com/api-reference/linkedin-ad-library/ad-details.md): Get the details for an ad
+- [Search Top Ads](https://docs.sociavault.com/api-reference/tiktok-ad-library/search.md): Discover the best-performing TikTok Creative Center ads across regions, industries, and time windows. Filter by keyword, objective, format, and engagement metrics to study what's working in any market.
+- [Get Ad Details](https://docs.sociavault.com/api-reference/tiktok-ad-library/ad.md): Retrieve the full details for a single TikTok Creative Center Top Ad by its ad ID, including creative assets, metrics, and metadata.
+- [Profile](https://docs.sociavault.com/api-reference/twitter/profile.md): Get Twitter profile information including stats and metadata
+- [User Tweets](https://docs.sociavault.com/api-reference/twitter/user-tweets.md): Get tweets from a user's public profile. Note: Twitter's public API surfaces the user's ~100 most popular tweets, not their most recent ones.
+- [User Tweets (All)](https://docs.sociavault.com/api-reference/twitter/user-tweets-all.md): Get a user's latest tweets in chronological order using their numeric `rest_id`. Returns paginated timeline results — use the cursor parameter to load more. Maximum of 20 tweets per request.
+- [Tweet Details](https://docs.sociavault.com/api-reference/twitter/tweet.md): Get detailed information about a specific tweet including engagement
+- [Transcript](https://docs.sociavault.com/api-reference/twitter/tweet-transcript.md): Generate an AI-powered transcript for a video tweet. Response times may be slower than other endpoints due to AI processing.
+- [Search](https://docs.sociavault.com/api-reference/twitter/search.md): Search Twitter for tweets, users, photos, media, and more. Results are paginated — use the cursor parameter to fetch additional pages.
+- [Tweet Comments](https://docs.sociavault.com/api-reference/twitter/comments.md): Get comments (replies) on a specific tweet. Results are paginated. Use the cursor parameter to fetch additional pages.
+- [Community](https://docs.sociavault.com/api-reference/twitter/community.md): Get the details of a Twitter(X) Community
+- [Community Tweets](https://docs.sociavault.com/api-reference/twitter/community-tweets.md): Get the tweets from a Twitter(X) Community
+- [Subreddit Details](https://docs.sociavault.com/api-reference/reddit/subreddit-details.md): Get details about a subreddit. Pass a subreddit name or URL to the subreddit.
+- [Subreddit Posts](https://docs.sociavault.com/api-reference/reddit/subreddit.md): Get recent posts from a subreddit with engagement metrics
+- [Subreddit Search](https://docs.sociavault.com/api-reference/reddit/subreddit-search.md): Search within a subreddit for posts, comments, or media matching a query
+- [Post Comments](https://docs.sociavault.com/api-reference/reddit/post-comments.md): Get comments and post information from a Reddit post
+- [Post Transcript](https://docs.sociavault.com/api-reference/reddit/post-transcript.md): Get the transcript from a Reddit video post.
+- [Search](https://docs.sociavault.com/api-reference/reddit/search.md): Search Reddit for posts
+- [Profile](https://docs.sociavault.com/api-reference/threads/profile.md): Get Threads profile info
+- [Posts](https://docs.sociavault.com/api-reference/threads/user-posts.md): Get recent posts from a Threads user. Note: Threads limits public access to approximately the last 20–30 posts per user.
+- [Post](https://docs.sociavault.com/api-reference/threads/post.md): Get a post by url. Also returns comments and related posts.
+- [Search Users](https://docs.sociavault.com/api-reference/threads/search-users.md): Search for users by username
+- [Search](https://docs.sociavault.com/api-reference/google/search.md): Search Google
+- [Search](https://docs.sociavault.com/api-reference/pinterest/search.md): Search Pinterest for pins
+- [Pin](https://docs.sociavault.com/api-reference/pinterest/pin.md): Get Pinterest pin details
+- [User Boards](https://docs.sociavault.com/api-reference/pinterest/user-boards.md): Get a user's boards
+- [Board](https://docs.sociavault.com/api-reference/pinterest/board.md): Get the pins of a Pinterest board
+- [Profile](https://docs.sociavault.com/api-reference/twitch/profile.md): Get a Twitch user's public profile information.
+- [User Videos](https://docs.sociavault.com/api-reference/twitch/user-videos.md): Get videos from a Twitch user.
+- [User Schedule](https://docs.sociavault.com/api-reference/twitch/user-schedule.md): Get a Twitch user's streaming schedule.
+- [Clip](https://docs.sociavault.com/api-reference/twitch/clip.md): Get details of a Twitch clip.
+- [Get Credits Balance](https://docs.sociavault.com/api-reference/credits.md): Returns the current credit balance and subscription status for the authenticated user
+
+## OpenAPI Specs
+
+- [openapi](/api-reference/openapi.json)
+
+## Optional
+
+- [API Playground](https://sociavault.com/playground)
+- [Pricing](https://sociavault.com/pricing)
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.
