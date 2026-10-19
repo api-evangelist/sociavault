@@ -1,42 +1,31 @@
 aid: sociavault
-
 name: Ziddec
-
 image: https://sociavault.com/og-image.png
-
 description: Ziddec provides a public social media scraping API platform, offering developers access to data from Instagram, TikTok, YouTube,
   Twitter, LinkedIn, Reddit, Pinterest and more. The service enables real‑time extraction of profiles, posts, comments, and analytics for building
   dashboards, training AI models, and monitoring trends, all without managing infrastructure. Ziddec emphasizes high uptime, low latency, and
   transparent pricing, positioning itself as a turnkey solution for social media data needs.
-
 url: https://raw.githubusercontent.com/api-evangelist/sociavault/refs/heads/main/apis.yml
-
 x-type: company
-
 x-source: harvest:g2-catalog
-
 x-tier: profiled
 x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
-
 specificationVersion: '0.20'
-
 created: '2026-10-18'
-
 modified: '2026-10-18'
-
 tags:
 - Social Media Data
 - API
 - Scraping
 - Analytics
-
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-
 common:
+- type: Vendors
+  url: vendors/sociavault-vendors.yml
 - type: Plans
   url: plans/sociavault-plans-pricing.yml
 - type: AgentSkill
@@ -89,13 +78,11 @@ common:
   url: security/sociavault-domain-security.yml
 - type: Website
   url: https://sociavault.com/
-
 apis:
 - name: SociaVault API
   description: Social media data extraction API
   humanURL: https://docs.sociavault.com/api-reference/introduction
   baseURL: https://api.sociavault.com
-  properties:
   aid: sociavault:sociavault-api
 x-enrichment:
   date: '2026-10-19'

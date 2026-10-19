@@ -1,5 +1,5 @@
 generated: '2026-10-19'
-method: none
+method: probed
 source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
 registry: all/0-working/vendors.yml
 areas_vocabulary:
@@ -15,17 +15,42 @@ areas_vocabulary:
 - community
 - identity
 - mcp-hosting
-vendors: []
+vendors:
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: docs.sociavault.com
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: vercel
+  name: Vercel
+  area: hosting
+  host: docs.sociavault.com
+  evidence: header:x-vercel-id
+  signal: header
+  confidence: high
+  kin_score: []
 reliance:
-  areas_vendor_served: []
-  vendor_count: 0
+  areas_vendor_served:
+  - cdn
+  - hosting
+  vendor_count: 2
   areas_observed: 12
-  share_of_observable_areas: 0.0
+  share_of_observable_areas: 0.167
   note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
     cannot tell those apart
 checked:
 - 'docs-platform: no-docs-host'
+- status.sociavault.com (StatusPage)
+- sociavault.com (SignUp)
+- docs.sociavault.com (GettingStarted)
+- docs.sociavault.com (Documentation)
+- docs.sociavault.com\ (DeveloperPortal)
+- docs.sociavault.com (APIReference)
 - sociavault.com (Website)
 - api.sociavault.com (baseURL)
 - sociavault.main-kill-isr.mintlify.me (mcp)
-note: no vendor fingerprint on any host the record names; a hand-built surface, or hosts the pipeline has not yet found
