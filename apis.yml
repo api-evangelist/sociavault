@@ -14,6 +14,10 @@ specificationVersion: '0.20'
 created: '2026-10-18'
 modified: '2026-10-18'
 tags:
+- social-media-data
+- Web Scraping
+- Analytics
+tags_raw:
 - Social Media Data
 - API
 - Scraping

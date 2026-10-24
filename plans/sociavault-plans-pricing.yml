@@ -54,3 +54,34 @@ plans:
   - Custom integrations on request
   - Credits never expire
 docs: https://sociavault.com/pricing
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Starter Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Growth Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
